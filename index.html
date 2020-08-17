@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML exercise 03</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="login">
+        <form action="/login" method="POST" autocomplete="off"
+        novalidate id="login-form" target="_blank">
+            <input type="email" name="email" placeholder="input ID">
+            <br>
+            <input type="password" name="password" placeholder="input Password">
+            <br>
+            <button type="submit">Sign In</button>
+            <div id="ask-remember">
+                로그인 정보를 기억할까요?
+                <input type="checkbox" name="remember">
+            </div>
+            <div id="reset">
+                입력사항을 지울까요?
+                <input type="reset" name="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+    <div id="file-transmit">
+        <input type="file" multiple>
+    </div>
+    <button id="click" onclick="doit()">클릭하세요</button>
+    <script>
+        function doit(){
+            alert('클릭했습니다!');
+        }
+    </script>
+    <div id="text">
+        <textarea name="memo" id="notepad" cols="30" rows="10"
+        placeholder="Use this to memo"></textarea>
+    </div>
+    <form>
+        <fieldset>
+            <legend>Strabucks Coffee Size</legend>
+            <label>
+                <input type="radio" name="size" value="Tall">
+                Tall
+            </label>
+            <label>
+                <input type="radio" name="size" value="Grande">
+                Grande
+            </label>
+
+            <label>
+                <input type="radio" name="size" value="Venti">
+                Venti
+            </label>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+    <div id="select">
+        <select>
+            <optgroup label="Coffee">
+                <option>Americano</option>
+                <option>Cafe Mocha</option>
+                <option label="Cappuccino" value="Cappuccino"></option>
+            </optgroup>
+            <optgroup label="Latte">
+                <option disabled>Cafe Latte</option>
+                <option disabled>Vanilla Latte</option>
+            </optgroup>
+            <optgroup label="Blended">
+                <option>Plain</option>
+                <option>Strawberry</option>
+            </optgroup>
+        </select>
+        <button type="submit">Select</button>
+    </div>
+    <br>
+    <div id="datalist">
+        <input type="text" list="fruits">
+        <datalist id="fruits">
+            <option>Apple</option>
+            <option>Banana</option>
+            <option disabled>Mango</option>
+            <option>Strawberry</option>
+        </datalist>
+    </div>
+</body>
+</html>

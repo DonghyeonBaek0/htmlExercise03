@@ -1,0 +1,73 @@
+body{
+    font-family: sans-serif;
+}
+#login{
+
+}
+#login-form{
+    width: 300px;
+    height: 250px;
+    background: #ddd;
+    border: 1px solid #999;
+    border-right: 3px solid #666;
+    border-bottom: 3px solid #666;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#login-form [type="email"], [type="password"]{
+    font-size: 18px;
+    padding: 2px;
+}
+#login-form [type="email"]{
+    margin-bottom: 5px;
+}
+#login-form [type="submit"]{
+    font-size: 18px;
+    margin-bottom: 70px;
+}
+#login-form button{
+    margin: 10px 0;
+    padding: 5px 10px;
+    text-align: center;
+}
+#ask-remember{
+    margin-bottom: 5px;
+}
+#login-form [type="reset"]{
+    font-size: 15px;
+    padding: 3px 7px;
+}
+#file-transmit{
+    border: 1px solid #e5e5e5;
+    border-right: 3px solid #999;
+    border-bottom: 3px solid #999;
+    background: rgba(64,120,232,.3);
+    width: 300px;
+    height: 100px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    padding: 37px 30px;
+    display: flex;
+    text-align: center;
+}
+#file-transmit input{
+    display: flex;
+    text-align: center;
+    width: 236px;
+}
+#click{
+    margin-top: 30px;
+}
+#text{
+    margin-top: 30px;
+}
+fieldset{
+    width: 30%;
+    text-align: center;
+}
+#select{
+    margin-top: 30px;
+}
+#datalist{
+    margin-top: 30px;
+}
